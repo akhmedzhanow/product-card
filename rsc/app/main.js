@@ -54,10 +54,7 @@ function changeColorButton() {
 // Вывод названия главной заголовки в консоль лог при наведении
 
 const mainTitle = document.querySelector('.product-catalog__title');
-mainTitle.addEventListener('mouseover', () => {
-  outputConsoleLogTitle('Выбери свой продукт')
-});
 
-function outputConsoleLogTitle(message) {
-  console.log(message);
-}
+mainTitle.addEventListener('mouseover', () => {
+  console.log(mainTitle.textContent);
+})
