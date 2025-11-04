@@ -1,31 +1,31 @@
 //1.
 
-function getCityTemperature (city, temperature) {
+function showCityTemperature(city, temperature) {
   console.log(`Сейчас в городе ${city} температура ${temperature} градусов по Цельсию`);
 }
 
-getCityTemperature("Астрахань", 13);
+showCityTemperature("Астрахань", 13);
 
 //2.
 
-const soundSpeed = 343;
+const SOUND_SPEED = 343;
 
-function checkSpeed (speed) {
-  if (speed > soundSpeed) {
+function checkSpeed(speed) {
+  if (speed >= SOUND_SPEED) {
     console.log("сверхзвуковая скорость");
   } else {
     console.log("дозвуковая скорость");
   }
 }
 
-checkSpeed(350)
+checkSpeed(400)
 
 //3.
 
 const productName = "Мясо";
 const productPrice = 900;
 
-function buyMeat (currentBudget) {
+function buyProduct(currentBudget) {
   if (currentBudget >= productPrice) {
     console.log(`${productName} приобретён. Спасибо за покупку!`);
   } else {
@@ -33,7 +33,7 @@ function buyMeat (currentBudget) {
   }
 }
 
-buyMeat(700)
+buyProduct(700)
 
 //4.
 
