@@ -23,15 +23,7 @@ const car = {
   transmission: "Механика"
 };
 
-const owner = {
-  firstName: "Галим",
-  lastName: "Ахмеджанов",
-  age: 27,
-  city: "Астрахань",
-  jobTitle: "Газоспасатель 5 разряда"
-};
-
-car.owner = owner;
+car.owner = userProfile;
 
 console.log(car.owner.firstName);
 
@@ -112,17 +104,47 @@ console.log(myBooks);
 // 7.
 
 const favoriteBooks = [
-  { title: "Мартин Иден", author: "Джек Лондон", year: 1909, coverColor: "синий", genre: "Роман" },
-  { title: "Цветы для Элджернона", author: "Дэниел Киз", year: 1966, coverColor: "зелёный", genre: "Научная фантастика" },
-  { title: "Три товарища", author: "Эрих Мария Ремарк", year: 1936, coverColor: "красный", genre: "Роман" }
+  { 
+    title: "Мартин Иден",
+    author: "Джек Лондон",
+    year: 1909,
+    coverColor: "синий",
+    genre: "Роман"
+  },
+  { 
+    title: "Цветы для Элджернона",
+    author: "Дэниел Киз",
+    year: 1966,
+    coverColor: "зелёный",
+    genre: "Научная фантастика"
+  },
+  { 
+    title: "Три товарища",
+    author: "Эрих Мария Ремарк",
+    year: 1936,
+    coverColor: "красный",
+    genre: "Роман"
+  }
 ];
 
 const harryPotterBooks = [
-  { title: "Гарри Поттер и философский камень", author: "Дж. К. Роулинг", year: 1997, coverColor: "красный", genre: "Фэнтези" },
-  { title: "Гарри Поттер и тайная комната", author: "Дж. К. Роулинг", year: 1998, coverColor: "зелёный", genre: "Фэнтези" }
+  {
+    title: "Гарри Поттер и философский камень",
+    author: "Дж. К. Роулинг",
+    year: 1997,
+    coverColor: "красный",
+    genre: "Фэнтези"
+  },
+  {
+    title: "Гарри Поттер и тайная комната",
+    author: "Дж. К. Роулинг",
+    year: 1998,
+    coverColor: "зелёный",
+    genre: "Фэнтези"
+  }
 ];
 
-const allBooks = [...favoriteBooks, ...harryPotterBooks];
+const allBooks = [...myBooks, ...favoriteBooks, ...harryPotterBooks];
 
 console.log(allBooks);
 
