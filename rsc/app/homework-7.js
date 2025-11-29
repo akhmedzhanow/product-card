@@ -25,7 +25,7 @@ console.log(hasHarryPotter);
 // 3.  Написать функцию, которая аргументом будет принимать массив и изменять его порядок на противоположный.
 
 function reverseArray(array) {
-  return array.slice().reverse();
+  return array.reverse();
 }
 
 const reversedNumbers = reverseArray(numberList);
@@ -44,13 +44,7 @@ console.log(commentsWithComEmail);
 
 // 5.  Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
 
-const updatedComments = userComments.map(comment => {
-  if (comment.id <= 5) {
-    return { ...comment, postId: 2 };
-  } else {
-    return { ...comment, postId: 1 };
-  }
-});
+const updatedComments = userComments.map((userComments) => ({...userComments, postId:userComments.id <= 5 ? 2 : 1}))
 
 console.log(updatedComments);
 
@@ -65,14 +59,7 @@ console.log(shortComments);
 
 // 7. Перебираем массив, добавляем объектам свойство isInvalid и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false.
 
-const commentsWithValidity = userComments.map(comment => {
-  const isInvalid = comment.body.length > 180;
-
-  return {
-    ...comment,
-    isInvalid: isInvalid
-  };
-});
+const commentsWithValidity = userComments.map(userComments => ({...userComments, isInvalid:userComments.body.length > 180}))
 
 console.log(commentsWithValidity);
 
