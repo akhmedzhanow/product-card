@@ -1,4 +1,4 @@
-import { productCards } from "../app/productCards.js";
+import { productCards } from "./product-сards.js";
 
 const productTemplate = document.getElementById("product-template");
 const productList = document.getElementById("product-list");
@@ -32,7 +32,7 @@ const productNameDescriptionArray = productCards.reduce((acc, product) => {
 console.log(productNameDescriptionArray);
 
 
-function askAndRenderCards() {
+function renderUserCards() {
   const userInput = prompt("Сколько карточек отобразить? От 1 до 5");
 
   const cardsCount = Number(userInput);
@@ -47,4 +47,4 @@ function askAndRenderCards() {
   outputProductCards(limitedCards);
 }
 
-askAndRenderCards();
+renderUserCards();
