@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamaint</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section class="product-catalog">
+      <div class="product-catalog__container">
+        <h1 class="product-catalog__title">Выбери свой продукт</h1>
+        <div class="product-catalog__button">
+          <button class="button__item" id="change-color-card-mousse">Сменить цвет карточки</button>
+          <button class="button__item" id="change-all-card-color">Сменить цвет всех карточек</button>
+          <button class="button__item" id="open-page-google">Открыть страницу Google</button>
+          <button class="button__item" id="output-console-log">Вывести сообщение в консоль log</button>
+          <button class="button__item" id="change-color-button">Поменять цвет кнопки</button>
+        </div>
+        <ul id="product-list" class="product-card"></ul>
+        <template id="product-template">
+          <li class="product-card__list">
+            <div>
+              <img class="product-img" src="" alt="" width="290px" height="245px">
+              <div>
+                <span class="skin-type"></span>
+                <h2 class="product-card__title"></h2>
+                <p class="product-description"></p>
+                <div class="compound">
+                  <span>Состав:</span>
+                  <ul class="product-compound"></ul>
+                </div>
+                <div class="price">
+                  <span class="price__text">Цена</span>
+                  <span class="price__tag"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </template>
+      </div>
+    </section>
+  </main>
+  <script src="../app/main.js"></script>
+  <script src="../app/homework-5.js"></script>
+  <script src="../app/homework-6.js"></script>
+  <script type="module" src="../app/homework-7.js"></script>
+  <script type="module" src="../app/homework-8.js"></script>
+</body>
+</html>
