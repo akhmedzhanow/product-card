@@ -1,0 +1,170 @@
+/* === FOOTER === */
+
+.footer {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  /* сверху/снизу полоса по высоте, как на макете */
+  padding: 40px 0 30px;
+}
+
+/* контейнер футера — те же размеры, что и у карточек */
+.footer__container {
+  width: 1280px;        /* как .product-catalog */
+  margin: 0 auto;       /* центрируем по странице */
+  padding: 0 85px;      /* как .product-catalog__container */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* левая колонка */
+
+.footer__info {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer__logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.footer__description {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__social-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* центральная колонка (подписка) */
+
+.footer__subscription {
+  flex: 1.2;
+  min-width: 300px;
+  text-align: center;
+}
+
+.footer__subscription-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.footer__form {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  min-width: 420px;
+  max-width: 100%;
+}
+
+.footer__input-wrapper {
+  flex: 1;
+}
+
+.footer__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.footer__form-divider {
+  width: 1px;
+  height: 24px;
+  background-color: #d0d0d0;
+  margin: 0 14px;
+}
+
+.footer__submit-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.footer__divider {
+  width: 60px;
+  height: 2px;
+  background-color: #c4c4c4;
+  margin: 28px auto 8px;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  opacity: 0.8;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* правая колонка */
+
+.footer__links {
+  flex: 0.8;
+  min-width: 180px;
+  text-align: right;
+}
+
+.footer__links-title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.footer__links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links-list a {
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+.footer__link {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.footer__link:hover {
+  opacity: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

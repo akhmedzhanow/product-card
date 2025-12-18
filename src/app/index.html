@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diamaint</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="modal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -44,11 +46,49 @@
         </template>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <section class="footer__info">
+          <h2 class="footer__logo">Product Cards</h2>
+          <p class="footer__description">У Нас Самые Лучшие Продукты Для Кожи!</p>
+          <div class="footer__socials">
+            <a href="#">
+              <img src="../img/telegram-icon.png" alt="Telegram" class="footer__social-icon">
+            </a>
+            <a href="#">
+              <img src="../img/vk-icon.png" alt="vk" class="footer__social-icon">
+            </a>
+          </div>
+        </section>
+        <section class="footer__subscription">
+          <h3 class="footer__subscription-title">Подпишись на наши акции:</h3>
+          <form class="footer__form" id="subscribe-form" novalidate>
+            <label class="footer__input-wrapper">
+              <span class="visually-hidden">Email</span>
+              <input type="email" name="email" class="footer__input" placeholder="Введи Email..." required>
+            </label>
+            <span class="footer__form-divider" aria-hidden="true"></span>
+            <button type="submit" class="footer__submit-btn">Подписаться</button>
+          </form>
+          <div class="footer__divider"></div>
+          <p class="footer__copyright">www.product-cards.com©all right reserve</p>
+        </section>
+        <nav class="footer__links" aria-label="Быстрые ссылки">
+          <h3 class="footer__links-title">Быстрые ссылки</h3>
+          <ul class="footer__links-list">
+            <li><a>Главная</a></li>
+            <li><a>Магазины</a></li>
+            <li><a>Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </main>
   <script src="../app/main.js"></script>
   <script src="../app/homework-5.js"></script>
   <script src="../app/homework-6.js"></script>
   <script type="module" src="../app/homework-7.js"></script>
   <script type="module" src="../app/homework-8.js"></script>
+  <script type="module" src="../app/homework-9.js"></script>
 </body>
 </html>
