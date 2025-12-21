@@ -20,13 +20,8 @@ subscribeForm.addEventListener('submit', (event) => {
     return;
   }
 
-  // Чтение значения
-  const email = subscribeInput.value;
-
-  // Создание объекта
-  const data = {
-    email: email
-  };
+  const formData = new FormData(subscribeForm);
+  const data = Object.fromEntries(formData.entries());
 
   console.log('Подписка:', data);
 });
