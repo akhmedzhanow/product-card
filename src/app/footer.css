@@ -1,170 +1,142 @@
-/* === FOOTER === */
-
 .footer {
-  background-color: #3b3b3b;
+  background: #333333;
   color: #ffffff;
-  /* сверху/снизу полоса по высоте, как на макете */
-  padding: 40px 0 30px;
+  padding: 40px 40px 30px;
 }
 
-/* контейнер футера — те же размеры, что и у карточек */
-.footer__container {
-  width: 1280px;        /* как .product-catalog */
-  margin: 0 auto;       /* центрируем по странице */
-  padding: 0 85px;      /* как .product-catalog__container */
-
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 110px;
+  flex-wrap: wrap;
 }
 
-/* левая колонка */
-
-.footer__info {
-  flex: 1;
-  min-width: 220px;
+/* Колонки */
+.footer-col {
+  flex: 1 1 250px;
 }
 
-.footer__logo {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 8px;
+/* ЛЕВАЯ КОЛОНКА */
+.footer-logo {
+  font-size: 22px;
+  margin: 0 0 10px;
   color: #ffffff;
 }
 
-.footer__description {
-  font-size: 14px;
-  line-height: 1.4;
-  margin-bottom: 24px;
-  color: #ffffff;
+.footer-subtitle {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.footer__socials {
+.footer-socials {
   display: flex;
   gap: 16px;
+  margin-top: 12px;
 }
 
-.footer__social-icon {
-  width: 24px;
-  height: 24px;
+.social-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
   display: block;
+  cursor: pointer;
 }
 
-/* центральная колонка (подписка) */
-
-.footer__subscription {
-  flex: 1.2;
-  min-width: 300px;
+/* ЦЕНТР */
+.footer-center {
   text-align: center;
 }
 
-.footer__subscription-title {
+.footer-title {
   font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 18px;
+  margin: 0 0 15px;
   color: #ffffff;
 }
 
-.footer__form {
-  display: inline-flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 10px 14px;
-  min-width: 420px;
-  max-width: 100%;
+/* Форма */
+.footer-form {
+  display: flex;
+  align-items: stretch;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
-.footer__input-wrapper {
+.footer-input {
   flex: 1;
-}
-
-.footer__input {
-  width: 100%;
   border: none;
+  padding: 10px 12px;
+  font-size: 16px;
   outline: none;
-  font-size: 14px;
-  font-family: inherit;
 }
 
-.footer__form-divider {
-  width: 1px;
-  height: 24px;
-  background-color: #d0d0d0;
-  margin: 0 14px;
-}
-
-.footer__submit-btn {
+.footer-btn {
   border: none;
-  background-color: transparent;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: inherit;
+  border-left: 1px solid #e0e0e0;
+  padding: 10px 18px;
+  font-size: 16px;
+  background: transparent;
+  color: #333333;
   cursor: pointer;
   white-space: nowrap;
 }
 
-.footer__divider {
-  width: 60px;
-  height: 2px;
-  background-color: #c4c4c4;
-  margin: 28px auto 8px;
+.footer-btn:hover {
+  background: #f0f0f0;
 }
 
-.footer__copyright {
-  font-size: 12px;
-  opacity: 0.8;
-  text-align: center;
-  color: #ffffff;
+/* ПРАВАЯ КОЛОНКА */
+.footer-right {
+  text-align: left;
 }
 
-/* правая колонка */
-
-.footer__links {
-  flex: 0.8;
-  min-width: 180px;
-  text-align: right;
-}
-
-.footer__links-title {
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  color: #ffffff;
-}
-
-.footer__links-list {
+.footer-links {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer__links-list a {
-  font-size: 16px;
-  color: #c4c4c4;
+.footer-links li + li {
+  margin-top: 6px;
 }
 
-.footer__link {
-  display: block;
-  font-size: 14px;
+.footer-links a {
+  font-size: 15px;
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: 8px;
-  opacity: 0.9;
 }
 
-.footer__link:hover {
-  opacity: 1;
+.footer-links a:visited {
+  color: #ffffff;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+/* НИЖНЯЯ ЧАСТЬ */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 35px auto 0;
+  text-align: center;
+}
+
+.footer-line {
+  width: 50px;
+  height: 2px;
+  background: #ffffff;
+  margin: 0 auto 8px;
+  opacity: 0.8;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
 }

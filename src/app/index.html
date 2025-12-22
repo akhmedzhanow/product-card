@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="page">
   <main>
     <section class="product-catalog">
       <div class="product-catalog__container">
@@ -22,6 +22,7 @@
           <button class="button__item" id="open-page-google">Открыть страницу Google</button>
           <button class="button__item" id="output-console-log">Вывести сообщение в консоль log</button>
           <button class="button__item" id="change-color-button">Поменять цвет кнопки</button>
+          <button class="button__item" id="button-registration">Регистрация</button>
         </div>
         <ul id="product-list" class="product-card"></ul>
         <template id="product-template">
@@ -47,42 +48,54 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer__container">
-        <section class="footer__info">
-          <h2 class="footer__logo">Product Cards</h2>
-          <p class="footer__description">У Нас Самые Лучшие Продукты Для Кожи!</p>
-          <div class="footer__socials">
-            <a href="#">
-              <img src="../img/telegram-icon.png" alt="Telegram" class="footer__social-icon">
-            </a>
-            <a href="#">
-              <img src="../img/vk-icon.png" alt="vk" class="footer__social-icon">
-            </a>
+      <div class="footer-inner">
+        <div class="footer-col footer-left">
+          <h2 class="footer-logo">Product Cards</h2>
+          <p class="footer-subtitle">У Нас Самые Лучшие Продукты Для Кожи!</p>
+          <div class="footer-socials">
+            <img src="../img/tg-icon.svg" alt="tg" class="social-icon">
+            <img src="../img/vk-icon.svg" alt="vk" class="social-icon">
           </div>
-        </section>
-        <section class="footer__subscription">
-          <h3 class="footer__subscription-title">Подпишись на наши акции:</h3>
-          <form class="footer__form" id="subscribe-form" novalidate>
-            <label class="footer__input-wrapper">
-              <span class="visually-hidden">Email</span>
-              <input type="email" name="email" class="footer__input" placeholder="Введи Email..." required>
-            </label>
-            <span class="footer__form-divider" aria-hidden="true"></span>
-            <button type="submit" class="footer__submit-btn">Подписаться</button>
+        </div>
+        <div class="footer-col footer-center">
+          <p class="footer-title">Подпишись на наши акции:</p>
+          <form class="footer-form" id="subscribe-form">
+            <input type="email" name="email" class="footer-input" placeholder="Введи Email..." required/>
+            <button type="submit" class="footer-btn">Подписаться</button>
           </form>
-          <div class="footer__divider"></div>
-          <p class="footer__copyright">www.product-cards.com©all right reserve</p>
-        </section>
-        <nav class="footer__links" aria-label="Быстрые ссылки">
-          <h3 class="footer__links-title">Быстрые ссылки</h3>
-          <ul class="footer__links-list">
-            <li><a>Главная</a></li>
-            <li><a>Магазины</a></li>
-            <li><a>Контакты</a></li>
+        </div>
+        <div class="footer-col footer-right">
+          <p class="footer-title">Быстрые ссылки</p>
+          <ul class="footer-links">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
-        </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-line"></div>
+        <p class="footer-copy">www.product-cards.com © all right reserve</p>
       </div>
     </footer>
+    <div class="modal overlay" id="registration-modal">
+      <form class="modal-form" id="registration-form">
+        <button class="modal-form__close-btn" type="button">х</button>
+        <label class="modal-form__label" for="surname-input">Введите вашу фамилию</label>
+        <input class="modal-form__field" name="user-surname" id="surname-input" type="text" required placeholder="Иванов">
+        <label class="modal-form__label" for="name-input">Введите ваше имя</label>
+        <input class="modal-form__field" name="user-name" id="name-input" type="text" required placeholder="Иван">
+        <label class="modal-form__label" for="date-input">Введите дату рождения</label>
+        <input class="modal-form__field" name="register-date" id="date-input" type="date" required>
+        <label class="modal-form__label" for="login-input">Введите логин</label>
+        <input class="modal-form__field" name="login" id="login-input" type="text" required placeholder="Ivanov.Ivan">
+        <label class="modal-form__label" for="password-input">Введите пароль</label>
+        <input class="modal-form__field" name="password" id="password-input" type="password" required minlength="6">
+        <label class="modal-form__label" for="check-password-input">Введите пароль повторно</label>
+        <input class="modal-form__field" name="check-password" id="check-password-input" type="password" required minlength="6">
+        <button class="modal-form__registration-btn" type="submit">Регистрировать</button>
+      </form>
+    </div>
   </main>
   <script src="../app/main.js"></script>
   <script src="../app/homework-5.js"></script>
