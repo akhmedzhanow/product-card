@@ -78,9 +78,10 @@
         <p class="footer-copy">www.product-cards.com © all right reserve</p>
       </div>
     </footer>
-    <div class="modal overlay" id="registration-modal">
-      <form class="modal-form" id="registration-form">
-        <button class="modal-form__close-btn" type="button" id="close-btn">х</button>
+    <div class="modal-overlay" id="registration-modal">
+      <div class="modal__content">
+        <form class="modal-form" id="registration-form">
+        <button class="modal-form__close-btn" type="button">х</button>
         <label class="modal-form__label" for="surname-input">Введите вашу фамилию</label>
         <input class="modal-form__field" name="user-surname" id="surname-input" type="text" required placeholder="Иванов">
         <label class="modal-form__label" for="name-input">Введите ваше имя</label>
@@ -95,6 +96,7 @@
         <input class="modal-form__field" name="check-password" id="check-password-input" type="password" required minlength="6">
         <button class="modal-form__registration-btn" type="submit">Регистрировать</button>
       </form>
+      </div>
     </div>
   </main>
   <script type="module" src="../app/main.js"></script>
