@@ -4,7 +4,6 @@ import { Form } from "./Form.js";
 let user = null;
 
 const registrationModal = new Modal('registration-modal');
-const overlay = registrationModal.overlay;
 const openModalBtn = document.querySelector('#button-registration');
 
 const subscribeFormInstance = new Form('subscribe-form');
@@ -35,12 +34,6 @@ openModalBtn.addEventListener('click', () => {
   registrationModal.isOpen();
 });
 
-overlay.addEventListener('click', (event) => {
-  if (event.target === overlay) {
-    registrationModal.close();
-  }
-});
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -65,4 +58,5 @@ form.addEventListener('submit', (event) => {
 
   registrationForm.reset();
   registrationModal.close();
+  registrationModal.isOpen();
 });

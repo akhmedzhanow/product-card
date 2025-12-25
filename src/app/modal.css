@@ -10,13 +10,18 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-.modal-overlay.modal-showed {
+.modal-overlay.overlay-showed {
   display: flex;
 }
 
 .modal__content {
   width: 100%;
   max-width: 420px;
+  display: none;
+}
+
+.modal__content.modal-showed {
+  display: block;
 }
 
 /* ФОРМА ВНУТРИ МОДАЛКИ */
