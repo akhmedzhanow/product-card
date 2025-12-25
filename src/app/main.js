@@ -1,60 +1,27 @@
-// Сменить цвет всех карточек.
+import './homework-4.js';
+import './homework-5.js';
+import './homework-6.js';
+import './homework-7.js';
+import './homework-8.js';
+import './homework-9.js';
+import { Modal } from './Modal.js';
+import './Form.js';
+import { Book } from './Book.js';
+import { PrintedBook } from './PrintedBook.js';
+import { AudioBook } from './AudioBook.js';
 
-const productCards = document.querySelectorAll('.product-card__list')
-const changeColorCardsButton = document.querySelector('#change-all-card-color')
-const colorCadedBlue = '#5F9EA0'
+const book = new Book("Просто книга", "Иван Иванов", 2001, 250);
+const printedBook = new PrintedBook("Три товарища", "Эрих Мария Ремарк", 2010, 380, "твердая");
+const audioBook = new AudioBook("Мартин Иден", "Джек Лондон", 2015, 480, 18, "Профессиональный диктор");
 
-changeColorCardsButton.addEventListener('click', () => {
-  productCards.forEach((card) => card.style.backgroundColor = colorCadedBlue)
-})
+const books = [book, printedBook, audioBook];
 
-// Сменить цвет карточки
+books.forEach(book => {
+  console.log(book.getInfo());
+});
 
-const firstProductCard = document.querySelector('.product-card__list')
-const changeColorFirstCardButton = document.querySelector('#change-color-card-mousse')
-const colorCitrine = '#E4D00A'
+books[2].playSample();
+books[1].placeOnShelf(16);
 
-changeColorFirstCardButton.addEventListener('click', () => {
-  firstProductCard.style.backgroundColor = colorCitrine;
-})
-
-// Открыть страницу Google
-
-const openGoogleButton = document.querySelector('#open-page-google')
-const googleURL = ('https://google.com')
-
-openGoogleButton.addEventListener('click', () => {
-  window.open(googleURL)
-})
-
-// вывести сообщение в консоль log
-
-const outputLogButton = document.querySelector('#output-console-log')
-
-outputLogButton.addEventListener('click', () => outputConsoleLogMessage('ДЗ №04'))
-
-function outputConsoleLogMessage(message) {
-  alert(message)
-  console.log(message)
-}
-
-// Изменение цвета при нажатии кнопки
-
-
-const colorChangeButton = document.querySelector('#change-color-button');
-
-colorChangeButton.addEventListener('click', () => {
-  changeColorButton()
-})
-
-function changeColorButton() {
-  colorChangeButton.classList.toggle('bg-citrine');
-}
-
-// Вывод названия главной заголовки в консоль лог при наведении
-
-const mainTitle = document.querySelector('.product-catalog__title');
-
-mainTitle.addEventListener('mouseover', () => {
-  console.log(mainTitle.textContent);
-})
+const check = new Modal('registration-modal');
+check.isOpen();
