@@ -12,9 +12,9 @@ export class Cafe {
   }
 
   orderDrink(drink) {
-    console.log(`Заказ в "${this.name}" (${this.location}): ${drink.name}`);
+    console.log(`Заказ в "${ this.name }" (${ this.location }): ${ drink.name }`);
     drink.serve();
-    console.log(`Заказ завершён: ${drink.name}`);
+    console.log(`Заказ завершён: ${ drink.name }`);
     console.log("Инфо напитка:", drink.getInfo());
   }
 }

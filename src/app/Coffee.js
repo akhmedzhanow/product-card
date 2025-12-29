@@ -9,9 +9,7 @@ export class Coffee extends Drink {
 
   prepare() {
     super.prepare();
-    console.log(
-      `Готовлю кофе: зёрна — ${this.beansType}, помол — ${this.grind}`
-    );
+    console.log(`Готовлю кофе: зёрна — ${ this.beansType }, помол — ${ this.grind }`);
     this.setTemperature(65);
   }
 }

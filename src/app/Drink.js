@@ -32,19 +32,17 @@ export class Drink {
   }
   
   #prepare() {
-    console.log(`Готовится ${this.name}`);
+    console.log(`Готовится ${ this.name }`);
     this.#isPrepared = true;
   }
 
   serve() {
-    console.log(`Запрос на подачу: ${this.name}`);
+    console.log(`Запрос на подачу: ${ this.name }`);
 
     if (!this.#isPrepared) {
       this.prepare();
     }
 
-    console.log(
-      `${this.name} подан. Объём: ${this.size}. Цена: ${this.price}₽. Температура: ${this.#temperature}°C`
-    );
+    console.log(`${ this.name } подан. Объём: ${ this.size }. Цена: ${ this.price }₽. Температура: ${ this.#temperature }°C`);
   }
 }

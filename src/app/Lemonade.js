@@ -9,9 +9,7 @@ export class Lemonade extends Drink {
 
   prepare() {
     super.prepare();
-    console.log(
-      `Готовлю лимонад: вкус — ${this.flavor}, лёд — ${this.ice ? "да" : "нет"}`
-    );
+    console.log(`Готовлю лимонад: вкус — ${ this.flavor }, лёд — ${ this.ice ? "да" : "нет" }`);
     this.setTemperature(6);
   }
 }

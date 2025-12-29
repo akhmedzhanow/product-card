@@ -9,9 +9,7 @@ export class Tea extends Drink {
 
   prepare() {
     super.prepare();
-    console.log(
-      `Завариваю чай: тип — ${this.type}, крепость — ${this.strength}`
-    );
+    console.log(`Завариваю чай: тип — ${ this.type }, крепость — ${ this.strength }`);
     this.setTemperature(80);
   }
 }
