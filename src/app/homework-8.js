@@ -48,3 +48,37 @@ function renderUserCards() {
 }
 
 renderUserCards();
+
+const userTemplate = document.getElementById("user-card-template");
+const userList = document.getElementById("user-list");
+
+function renderUsers(users) {
+  // очищаем контейнер перед рендером
+  userList.innerHTML = "";
+
+  users.forEach(user => {
+    const clone = userTemplate.content.cloneNode(true);
+
+    // наполняем карточку данными
+    clone.querySelector(".title").textContent =
+      `${user.name} ${user.surname}`;
+
+    clone.querySelector(".tagId").textContent =
+      `ID: ${user.id}`;
+
+    clone.querySelector(".email").textContent =
+      `Email: ${user.email}`;
+
+    clone.querySelector(".age").textContent =
+      `Возраст: ${user.age}`;
+
+    clone.querySelector(".city").textContent =
+      `Город: ${user.city ?? "—"}`;
+
+    // кнопка удаления (id понадобится позже)
+    const deleteBtn = clone.querySelector(".btnRemove");
+    deleteBtn.dataset.id = user.id;
+
+    userList.appendChild(clone);
+  });
+}
