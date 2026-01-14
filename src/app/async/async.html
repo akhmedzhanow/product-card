@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>staff</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="app">
+        <div id="container-data" class="panel show-data-loading">Данные загружаются...</div>
+        <div id="container-users" class="panel close-container-users">
+          <div class="row">
+            <button id="btn-get-all" class="btn" type="button">Получить все карточки</button>
+            <button id="btn-delete-all" class="btn btn-danger" type="button">Удалить все карточки</button>
+          </div>
+          <div id="user-list" class="cards"></div>
+        </div>
+        <template id="user-card-template">
+          <article class="card">
+            <div class="card-head">
+              <div class="authentication-info"></div>
+              <button class="btn btn-danger button-delete" type="button">Удалить</button>
+            </div>
+            <div class="name-info"></div>
+            <div class="surname-info"></div>
+            <div class="email-info"></div>
+            <div class="city-info"></div>
+            <div class="profession-info"></div>
+          </article>
+        </template>
+      </section>
+    </main>
+    <script src="./async.js"></script>
+  </body>
+</html>

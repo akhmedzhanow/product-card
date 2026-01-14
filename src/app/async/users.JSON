@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Галим",
+      "surname": "Ахмеджанов",
+      "email": "galim.ahmedzhanov@example.com",
+      "city": "Астрахань",
+      "profession": "Спасатель"
+    },
+    {
+      "id": 2,
+      "name": "Али",
+      "surname": "Ибрагимов",
+      "email": "ali.ibragimov@example.com",
+      "city": "Казань",
+      "profession": "Пожарный"
+    },
+    {
+      "id": 3,
+      "name": "Максим",
+      "surname": "Синяченко",
+      "email": "maxim.sinyachenko@example.com",
+      "city": "Москва",
+      "profession": "Водитель"
+    },
+    {
+      "id": 4,
+      "name": "Иван",
+      "surname": "Петров",
+      "email": "ivan.petrov@example.com",
+      "city": "Санкт-Петербург",
+      "profession": "Frontend-разработчик"
+    },
+    {
+      "id": 5,
+      "name": "Рустам",
+      "surname": "Нуриев",
+      "email": "rustam.nuriev@example.com",
+      "city": "Уфа",
+      "profession": "Учитель"
+    }
+  ]
+}

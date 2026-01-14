@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0e0f12;
+  color: #eaeaea;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.app {
+  width: min(900px, 100%);
+  display: grid;
+  gap: 16px;
+}
+
+.panel {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 16px;
+  background: #14161b;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #0f1116;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: #555;
+}
+
+.btn-danger {
+  border-color: #7a1f2d;
+}
+
+.btn-danger:hover {
+  border-color: #b12a40;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 12px;
+  background: #101218;
+  display: grid;
+  gap: 6px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.authentication-info {
+  font-weight: bold;
+}
+
+.show-data-loading {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.close-data-loading {
+  display: none;
+}
+
+.show-container-users {
+  display: block;
+}
+
+.close-container-users {
+  display: none;
+}
