@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -35,7 +37,7 @@ body {
   margin-bottom: 16px;
 }
 
-button {
+.btn {
   padding: 10px 12px;
   border-radius: 10px;
   border: 1px solid #333;
@@ -44,13 +46,15 @@ button {
   cursor: pointer;
 }
 
-button:hover { border-color: #555; }
+.btn:hover {
+  border-color: #555;
+}
 
-.danger {
+.btn-danger {
   border-color: #7a1f2d;
 }
 
-.danger:hover {
+.btn-danger:hover {
   border-color: #b12a40;
 }
 
@@ -69,7 +73,7 @@ button:hover { border-color: #555; }
   gap: 6px;
 }
 
-.cardHead {
+.card-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,8 +85,20 @@ button:hover { border-color: #555; }
   font-weight: bold;
 }
 
-.show-data__loading { display: block; text-align: center; font-size: 18px; }
-.close-data__loading { display: none; }
+.show-data-loading {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
 
-.show-container__users { display: block; }
-.close-container__users { display: none; }
+.close-data-loading {
+  display: none;
+}
+
+.show-container-users {
+  display: block;
+}
+
+.close-container-users {
+  display: none;
+}

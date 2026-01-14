@@ -3,27 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Staff</title>
+    <title>staff</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="page">
       <section class="app">
-        <div id="container-data" class="panel show-data__loading">
-          Данные загружаются...
-        </div>
-        <div id="container-users" class="panel close-container__users">
+        <div id="container-data" class="panel show-data-loading">Данные загружаются...</div>
+        <div id="container-users" class="panel close-container-users">
           <div class="row">
-            <button id="btnGetAll" type="button">Получить все карточки</button>
-            <button id="btnDeleteAll" class="danger" type="button">Удалить все карточки</button>
+            <button id="btn-get-all" class="btn" type="button">Получить все карточки</button>
+            <button id="btn-delete-all" class="btn btn-danger" type="button">Удалить все карточки</button>
           </div>
           <div id="user-list" class="cards"></div>
         </div>
         <template id="user-card-template">
           <article class="card">
-            <div class="cardHead">
+            <div class="card-head">
               <div class="authentication-info"></div>
-              <button class="button-delete danger" type="button">Удалить</button>
+              <button class="btn btn-danger button-delete" type="button">Удалить</button>
             </div>
             <div class="name-info"></div>
             <div class="surname-info"></div>
