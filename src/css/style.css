@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+body {
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+    text-align: center;
+}
+
+.product-list {
+    list-style-type: none;
+    background-color: #F7F7FA;
+    width: 340px;
+    height: 573px;
+}
+
+.card {
+    padding: 25px;
+}
+
+.image {
+    margin-bottom: 30px;
+    width: 290px;
+    height: 245px;
+    
+}
+
+.card-text {
+    text-transform: uppercase;
+    color: #A5A3B9;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.card-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.compound {
+    margin-top: 15px;
+}
+
+.compound-text {
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+.price-tag {
+    font-weight: 400;
+    margin-top: 25px;
+}
