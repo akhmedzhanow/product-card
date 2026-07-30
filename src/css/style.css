@@ -24,7 +24,7 @@ body {
     margin-bottom: 110px;
 }
 
-.product {
+.products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,35 +43,35 @@ body {
     padding: 25px;
 }
 
-.image {
+.card__image {
     margin-bottom: 30px;
     width: 290px;
     height: 245px;
     
 }
 
-.card-text {
+.card__text {
     text-transform: uppercase;
     color: #A5A3B9;
     font-size: 12px;
     line-height: 24px;
 }
 
-.card-title {
+.card__title {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.compound {
+.card__compound {
     margin-top: 15px;
     list-style-position: inside;
 }
 
-.compound-text {
+.compound__text {
     margin-top: 5px;
 }
 
-.price {
+.card__price {
     font-size: 20px;
     line-height: 24px;
     margin-top: 25px;
@@ -79,6 +79,7 @@ body {
     justify-content: space-between;
 }
 
-.price-tag {
+.price__tag {
     font-weight: 400;
 }
+
