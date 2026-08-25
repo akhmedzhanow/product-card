@@ -10,11 +10,24 @@ function reverseArray(array) {
     return [...array].reverse();
 }
 
+function hasMovie(movieName) {
+    if (typeof movieName !== "string") {
+        return "Название фильма должно быть строкой";
+    }
+
+    return movies.includes(movieName);
+}
+
+hasMovie("Дюна");
+hasMovie(123);
+
 const reversedNumbers = reverseArray(numbersFromFive);
 const reversedMovies = reverseArray(movies);
 
 console.log(numbersFromFive);
 console.log(hasDune);
+console.log(hasMovie("Дюна"));
+console.log(hasMovie(123));
 console.log(reversedNumbers);
 console.log(reversedMovies);
 
