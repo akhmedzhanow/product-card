@@ -1,5 +1,3 @@
-const productCard = document.querySelector('.card');
-const productCards = document.querySelectorAll('.card');
 const changeColorCardButton = document.querySelector('.change-color-card');
 const changeColorAllCardsButton = document.querySelector('.change-all-color-cards');
 const openGoogleButton = document.querySelector('.open-google');
@@ -11,10 +9,14 @@ const redColor = '#FF5133';
 const greenColor = '#6EFF75';
 
 changeColorCardButton.addEventListener('click', () => {
+    const productCard = document.querySelector('.card');
+
     productCard.style.backgroundColor = redColor;
 });
 
 changeColorAllCardsButton.addEventListener('click', () => {
+    const productCards = document.querySelectorAll('.card');
+
     productCards.forEach(card => {
         card.style.backgroundColor = greenColor;
     });
