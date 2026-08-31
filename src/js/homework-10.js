@@ -1,5 +1,7 @@
 import { products } from "./products.js";
 
+const PRODUCT_IMAGES_PATH = "./src/assets/images/";
+
 const productDescriptions = products.reduce((descriptions, product) => {
     descriptions.push({
         [product.name]: product.description,
@@ -37,7 +39,7 @@ function renderProductCards(productsToRender) {
         const image = card.querySelector(".card__image");
         const ingredientsList = card.querySelector(".compound__list");
 
-        image.src = product.image;
+        image.src = `${PRODUCT_IMAGES_PATH}${product.imageFileName}`;
         image.alt = product.name;
         card.querySelector(".card__text").textContent = product.skinType;
         card.querySelector(".card__title").textContent = product.name;
