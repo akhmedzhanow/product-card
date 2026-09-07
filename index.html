@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Каталог товаров</title>
 </head>
-<body>
+<body id="home">
+    <div class="page-content">
     <div class="buttons">
         <button class="change-color-card">Изменить цвет карточки</button>
         <button class="change-all-color-cards">Изменить цвет всех карточек</button>
         <button class="open-google">Открыть Google</button>
         <button class="output-console-log">Вывести сообщение в консоль</button>
         <button class="change-color-btn">Изменить цвет кнопки</button>
+        <button class="registration-button" type="button">Регистрация</button>
     </div>
     <h1 class="title">Выбери свой продукт</h1>
-    <ul class="products"></ul>
+    <ul class="products" id="products"></ul>
 
     <template id="product-template">
         <li class="product-list">
@@ -39,6 +41,73 @@
         </li>
     </template>
 
+    <footer class="footer" id="contacts">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a class="footer__logo">Product Cards</a>
+                    <p class="footer__description">У Нас Самые Лучшие Продукты Для Кожи!</p>
+                    <ul class="footer__socials" aria-label="Социальные сети">
+                        <li><a><img src="./src/assets/images/telegram.svg" width="21" height="18" alt="Telegram"></a></li>
+                        <li><a><img src="./src/assets/images/vk.svg" width="24" height="14" alt="ВКонтакте"></a></li>
+                    </ul>
+                </div>
+
+                <form class="subscription-form" aria-label="Подписка на акции">
+                    <label class="subscription-form__label" for="subscription-email">Подпишись на наши акции:</label>
+                    <div class="subscription-form__controls">
+                        <input class="subscription-form__input" id="subscription-email" name="email" type="email" autocomplete="email" placeholder="Введи Email..." required>
+                        <button class="subscription-form__button" type="submit">Подписаться</button>
+                    </div>
+                </form>
+
+                <nav class="footer__nav" aria-labelledby="footer-links-title">
+                    <h2 class="footer__nav-title" id="footer-links-title">Быстрые ссылки</h2>
+                    <ul class="footer__links">
+                        <li><a>Главная</a></li>
+                        <li><a>Магазин</a></li>
+                        <li><a>Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__copyright">
+                <hr class="footer__line">
+                <small>www.product-cards.com©all right reserve</small>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    <div class="overlay"></div>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="registration-title">
+        <button class="modal__close" type="button" aria-label="Закрыть окно">×</button>
+        <h2 class="modal__title" id="registration-title">Регистрация</h2>
+        <form class="registration-form" novalidate>
+            <label for="first-name">Имя</label>
+            <input id="first-name" name="firstName" type="text" placeholder="Введите имя" autocomplete="given-name" minlength="2" maxlength="50" required>
+
+            <label for="last-name">Фамилия</label>
+            <input id="last-name" name="lastName" type="text" placeholder="Введите фамилию" autocomplete="family-name" minlength="2" maxlength="50" required>
+
+            <label for="birth-date">Дата рождения</label>
+            <input id="birth-date" name="birthDate" type="date" placeholder="Дата рождения" autocomplete="bday" min="1900-01-01" required>
+
+            <label for="login">Логин</label>
+            <input id="login" name="login" type="text" placeholder="От 3 символов: латиница, цифры, _" autocomplete="username" pattern="[A-Za-z0-9_]{3,30}" title="От 3 до 30 символов: латинские буквы, цифры или подчёркивание" required>
+
+            <label for="password">Пароль</label>
+            <input id="password" name="password" type="password" placeholder="Минимум 8 символов" autocomplete="new-password" minlength="8" required>
+
+            <label for="confirm-password">Повторение пароля</label>
+            <input id="confirm-password" name="confirmPassword" type="password" placeholder="Введите пароль ещё раз" autocomplete="new-password" minlength="8" required>
+
+            <p class="registration-form__message" role="alert"></p>
+            <button class="registration-form__submit" type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <script type="module" src="./src/js/homework-11.js"></script>
     <script src="./src/js/main.js"></script>
     <script src="./src/js/homework-8.js"></script>
     <script type="module" src="./src/js/homework-9.js"></script>
