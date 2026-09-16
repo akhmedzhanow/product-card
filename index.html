@@ -53,7 +53,7 @@
                     </ul>
                 </div>
 
-                <form class="subscription-form" aria-label="Подписка на акции">
+                <form class="subscription-form" id="subscription-form" aria-label="Подписка на акции">
                     <label class="subscription-form__label" for="subscription-email">Подпишись на наши акции:</label>
                     <div class="subscription-form__controls">
                         <input class="subscription-form__input" id="subscription-email" name="email" type="email" autocomplete="email" placeholder="Введи Email..." required>
@@ -80,10 +80,10 @@
     </div>
 
     <div class="overlay"></div>
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="registration-title">
+    <div class="modal" id="registration-modal" role="dialog" aria-modal="true" aria-labelledby="registration-title">
         <button class="modal__close" type="button" aria-label="Закрыть окно">×</button>
         <h2 class="modal__title" id="registration-title">Регистрация</h2>
-        <form class="registration-form" novalidate>
+        <form class="registration-form" id="registration-form" novalidate>
             <label for="first-name">Имя</label>
             <input id="first-name" name="firstName" type="text" placeholder="Введите имя" autocomplete="given-name" minlength="2" maxlength="50" required>
 
@@ -107,10 +107,6 @@
         </form>
     </div>
 
-    <script type="module" src="./src/js/homework-11.js"></script>
-    <script src="./src/js/main.js"></script>
-    <script src="./src/js/homework-8.js"></script>
-    <script type="module" src="./src/js/homework-9.js"></script>
-    <script type="module" src="./src/js/homework-10.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>
