@@ -4,6 +4,7 @@ import "./homework-9.js";
 import "./homework-10.js";
 import "./homework-11.js";
 import "./homework-12.js";
+import "./homework-13.js";
 
 const changeColorCardButton = document.querySelector('.change-color-card');
 const changeColorAllCardsButton = document.querySelector('.change-all-color-cards');
