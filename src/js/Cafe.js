@@ -16,7 +16,7 @@ export class Cafe {
         }
         
         console.log(`Заказ принят: ${drink.name}`);
-       console.log(drink.getInfo());
+        console.log(drink.getInfo());
         drink.serve();
     }
 }
