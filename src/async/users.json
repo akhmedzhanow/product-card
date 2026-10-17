@@ -1,0 +1,46 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Азамат",
+            "surname": "Джулаев",
+            "email": "djulaev@mail.ru",
+            "age": 30
+        },
+        {
+            "id": 2,
+            "name": "Александр",
+            "surname": "Данилов",
+            "email": "danilov@mail.ru",
+            "age": 33
+        },
+        {
+            "id": 3,
+            "name": "Радмир",
+            "surname": "Сисенов",
+            "email": "sisenov@mail.ru",
+            "age": 31
+        },
+        {
+            "id": 4,
+            "name": "Сергей",
+            "surname": "Фирсов",
+            "email": "firsov@mail.ru",
+            "age": 36
+        },
+        {
+            "id": 5,
+            "name": "Каирбулат",
+            "surname": "Умаров",
+            "email": "umarov@mail.ru",
+            "age": 33
+        },
+        {
+            "id": 6,
+            "name": "Рамин",
+            "surname": "Амантаев",
+            "email": "amanataev@mail.ru",
+            "age": 28
+        }
+    ]
+}
