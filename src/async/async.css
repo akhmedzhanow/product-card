@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f4f5f9;
+}
+
+body.loading #message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+body.loading h1,
+body.loading .buttons,
+body.loading #users-container {
+  display: none;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#message {
+  min-height: 28px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 10px 16px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+#users-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.user-card {
+  width: 220px;
+  padding: 18px;
+  border: 1px solid #d0d4df;
+  border-radius: 8px;
+  background: white;
+  text-align: left;
+}
+
+.user-card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользователи</title>
+    <link rel="stylesheet" href="async.css">
+</head>
+<body>
+    <main>
+        <h1>Пользователи</h1>
+        <p id="message" role="status" aria-live="polite">Данные загружаются</p>
+        <div class="buttons">
+            <button id="get-all-users-btn" type="button">Получить всех пользователей</button>
+            <button id="delete-all-users-btn" type="button">Удалить всех пользователей</button>
+        </div>
+        <div id="users-container"></div>
+    </main>
+    <script src="async.js" defer></script>
+</body>
+</html>
